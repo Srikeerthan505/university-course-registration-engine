@@ -13,6 +13,7 @@ const port = Number(process.env.PORT || 4000);
 const allowedOrigins = [
   'http://localhost:5173',
   'https://university-course-registration-engine-86wlv9ba6.vercel.app'
+  'https://university-course-registration-engine-kn3ti9l2z.vercel.app'
 ];
 
 app.use(
