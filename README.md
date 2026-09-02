@@ -1,7 +1,7 @@
 -# Course Registration Engine
 > Concurrent-safe university enrollment system with PostgreSQL row-level locking and ACID transaction guarantees.
 
-**Live Demo:** [university-course-registration-engine-kn3ti9l2z.vercel.app](https://university-course-registration-engi.vercel.app/)  
+**Live Demo:** [https://university-course-registration-engi.vercel.app/](https://university-course-registration-engi.vercel.app/)  
 **Backend API:** [university-course-registration-engine.onrender.com](https://university-course-registration-engine.onrender.com)
 
 ---
