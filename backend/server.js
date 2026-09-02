@@ -10,16 +10,12 @@ const studentsRouter = require('./routes/students');
 const app = express();
 const port = Number(process.env.PORT || 4000);
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://university-course-registration-engine-86wlv9ba6.vercel.app'
-  'https://university-course-registration-engine-kn3ti9l2z.vercel.app'
-];
-
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      // Allow localhost for dev, and ANY Vercel URL for production
+      if (!origin || origin.includes('localhost') || origin.endsWith('.vercel.app')) {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
